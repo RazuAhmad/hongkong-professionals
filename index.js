@@ -30,7 +30,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try {
-        await client.connect();
+         client.connect();
 
         const totalUser=client.db('userProfileDB').collection('userProfileCollection');
 
